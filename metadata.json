@@ -1,0 +1,6 @@
+{
+  "name": "Moturu Monish Portfolio",
+  "description": "Professional responsive portfolio of Moturu Monish, a Software Engineer in Full Stack & AI/ML, with smooth scrolling and an interactive AI recruiter assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
