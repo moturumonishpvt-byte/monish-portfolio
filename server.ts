@@ -15,11 +15,6 @@ app.use(express.json());
 // Initialize server-side Gemini client
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
-  httpOptions: {
-    headers: {
-      'User-Agent': 'aistudio-build',
-    }
-  }
 });
 
 // In-memory message logs database
@@ -37,12 +32,12 @@ interface ServerContactMessage {
 const messageLogs: ServerContactMessage[] = [
   {
     id: 'msg-recruiter-demo',
-    name: 'Sarah Jenkins',
-    email: 'sjenkins@google.com',
+    name: 'Roodra Vilohit',
+    email: 'rvilohit@google.com',
     company: 'Google AI Research',
     text: 'Hi Moturu! I saw your Aequitas AI bias mitigation model and would love to chat. Are you open to a full-time SDE role starting soon? Let me know your availability!',
     timestamp: new Date().toLocaleDateString(),
-    aiResponseDraft: `Hi Sarah Jenkins,\n\nThank you for reaching out! I am thrilled to hear of your interest in my Aequitas AI Bias Mitigation project. The challenge of accent discrimination in speech models is indeed an area I have spent significant time researching and optimizing.\n\nI am extremely interested in discussing software engineering opportunities at Google AI Research. I am currently available for interviews and can jump on a call at your convenience. I will reach out to you via sjenkins@google.com to coordinate details.\n\nBest regards,\nMoturu Monish`,
+    aiResponseDraft: `Hi Roodra Vilohit,\n\nThank you for reaching out! I am thrilled to hear of your interest in my Aequitas AI Bias Mitigation project. The challenge of accent discrimination in speech models is indeed an area I have spent significant time researching and optimizing.\n\nI am extremely interested in discussing software engineering opportunities at Google AI Research. I am currently available for interviews and can jump on a call at your convenience. I will reach out to you via rvilohit@google.com to coordinate details.\n\nBest regards,\nMoturu Monish`,
     status: 'unread',
   }
 ];
@@ -64,7 +59,7 @@ Education:
 
 Technical Skills:
 - Languages: Python, Java, TypeScript, JavaScript, SQL, Kotlin
-- AI / ML & Edge: TensorFlow Lite, ONNX Runtime, Scikit-learn, Gemma 4, LLM Integration, Pandas, NumPy, Prompt Engineering
+- AI / ML & Edge: TensorFlow Lite, ONNX Runtime, Scikit-learn, Gemma, LLM Integration, Pandas, NumPy, Prompt Engineering
 - Full Stack / Web: React.js, React Native, Node.js, Express.js, FastAPI, Flask, REST APIs, WebSockets, Tailwind CSS, MUI
 - Databases & Tools: PostgreSQL, Supabase, SQLite, Docker, Git, GitHub Actions, Playwright, Vercel
 
@@ -77,7 +72,7 @@ Core Projects:
    - Admin client features ArcFace ResNet-100 INT8 ONNX (512-D embeddings, 52 FPS, 187ms latency, 89MB RAM), 11-tab console, Supabase WebSocket locks, and Playwright ERP sync.
 
 2. Aequitas — AI Bias Mitigation Platform (2026):
-   - Tech: Python, Flask, Gemma 4, Perspective API, Supabase (PostgreSQL), Docker
+   - Tech: Python, Flask, Gemma, Perspective API, Supabase (PostgreSQL), Docker
    - AI auditing platform for detecting and mitigating accent-based bias in automated video/audio interview scoring across 200+ applicant profiles.
    - Post-hoc score calibration keeps demographic parity variance under <7%.
    - Ingests 500-record batch chunks into Supabase with SynthID-style cryptographic watermarking for audit trails.
